@@ -1,0 +1,193 @@
+/*https://blog.hubspot.com/website/css-fade-in*/
+/*The Place Where I got the Fade-in From.*/
+
+.fade-in-text {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    animation: fadeIn linear 4s;
+    -webkit-animation: fadeIn linear 4s;
+    -moz-animation: fadeIn linear 4s;
+    -o-animation: fadeIn linear 4s;
+    -ms-animation: fadeIn linear 4s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/*End Of Fade in*/
+
+#indexT{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#indexB{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+
+}
+
+.indexW{
+    background-color: black;
+    color: white;
+    font-family: "VCR OSD Mono";
+    width: 200px;
+    font-size: 60px;
+}
+
+#indexB > div {
+    margin: 50px;
+}
+
+/* Overlay Came From W3Schools */
+
+#overlaymation {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*Actual Choosing Screen*/
+
+#erasesoon{
+
+}
+
+#showup{
+    display: none;
+}
+
+.ChoicePut{
+    background-color: black;
+    color: white;
+    font-family: "VCR OSD Mono";
+    font-size: 50px;
+}
+
+.whitenit{
+    color: white;
+    font-size: 50px;
+    font-family: "VCR OSD Mono"
+}
+
+#onoff1{
+    font-size: 30px;
+    font-family: "VCR OSD Mono";
+    color: white;
+}
+
+#onoff2{
+    font-size: 30px;
+    font-family: "VCR OSD Mono";
+    color: white;
+}
+
+/*Actual Game Screen*/
+
+#GameS{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#GameReport{
+    font-family: "VCR OSD Mono";
+}
+
+#GameCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 300px;
+
+}
+
+#SoonOff{
+    display: block;
+}
+
+#GameStart{
+    display: none;
+}
+
+#MovingOn{
+
+}
+
+#Endings{
+    display: block;
+}
+
+#EndScreen{
+}
+
+.Clean{
+    color: white;
+    font-family: "VCR OSD Mono";
+    font-size: 40px;
+}
+
+#buttonswitch{
+    display: block;
+}
+
+#justifyit{
+    display: flex;
+    flex-direction: row;
+}
+
+#turnon1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#railcard{
+    display: none;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+}
+
+#Welcomeback{
+    display: none;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choice</title>
+    <link rel="stylesheet" href="Squid.css">
+</head>
+<body style="background-color: black;">
+
+<div id="erasesoon">
+    <div class="fade-in-text">
+        <p>You Are A Scientist.</p>
+        <p>Your Job is to Simulate How Much or How Long It Will Take the Virus to Go Around the Whole School.</p>
+        <p>Read The Guide if You have not read the guide yet.</p>
+        <p>Days will be counted, and you cannot change anything while the process is ongoing.</p>
+        <button onclick="erasefast()" style="background-color: black; color: white; border: 1px solid white; font-size: 20px;">Close</button>
+        <button onclick="erasefast2()" style="background-color: black; color: white; border: 1px solid white; font-size: 20px;">Back</button>
+    </div>
+</div>
+
+<div id="showup">
+        <div id="ChoiceScreen">
+            <p class="whitenit"> Max Population Count <input placeholder="Max 1000 People" class="ChoicePut" type="text" id="MaxP"></p>
+            <p class="whitenit"> Non-Vaccinated Percentage <input placeholder = "Min 3 Percent" class="ChoicePut" type="text" id="VacPT"></p>
+            <button id="onoff1" style="background-color: black; font-family: 'VCR OSD Mono'; font-size: 20px; height: 40px; width: 100px;" onclick="Delta()">Delta</button>
+            <br>
+            <br>
+            <button style="background-color: black; color: white; font-family: 'VCR OSD Mono'; font-size: 20px; height: 40px; width: 140px;" onclick="ChoiceStart()">Start</button>
+        </div>
+</div>
+
+<div id="GameStart">
+    <navigation id = "GameCounter" style="color: white; font-size: 50px; font-family: 'VCR OSD Mono'">Day: </navigation>
+    <hr style="color: white;">
+    <div id="GameS">
+        <img src = "M.png">
+    </div>
+    <button id = "buttonswitch" style="background-color: black; color: white; font-family: 'VCR OSD Mono'; font-size: 20px; height: 40px; width: 140px;" onclick = "ForcedCalc()">STAT</button>
+    <div id="GameReport">
+        <div class = "Clean" id="WholeNCP"></div> <!---Non Corona Patients--->
+        <div class = "Clean" id="CoronaP"></div> <!---Corona Patients--->
+        <div class = "Clean" id="DeltaP"></div> <!---Delta Corona Patients--->
+        <!--- <div class = "Clean" id="DoctorP"></div> Doctors --->
+        <!--- <div class = "Clean" id="BoosterP"></div> Boostershot Patients --->
+        <!--- <div class = "Clean" id="Report"></div>Situation Report--->
+        <br>
+        <div id="justifyit">
+            <button id = "MovingOn" style="background-color: black; color: white; font-family: 'VCR OSD Mono'; font-size: 20px; height: 40px; width: 140px;" onclick="NextDay()">Open</button>
+            <button id = "Endings" style="background-color: black; color: white; font-family: 'VCR OSD Mono'; font-size: 20px; height: 40px; width: 140px;" onclick="EndDay()">Close</button>
+        </div>
+    </div>
+</div>
+
+<div id="turnon1">
+    <div class="Clean" id="EndScreen"></div>
+    <br>
+    <div><button id = "Welcomeback" style="background-color: black; color: white; font-family: 'VCR OSD Mono'; font-size: 20px; height: 40px; width: 140px;" onclick="Welcoming()">Go Back</button>
+</div>
+
+</body>
+<script src="Choice.js"></script>
+</html>
